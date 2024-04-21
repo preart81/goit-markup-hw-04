@@ -32,6 +32,19 @@
   overflow: hidden;
 }
 /*#endregion Visually hidden CSS pattern ------------------*/
+/*#region Current ----------------------------*/
+.current::after {
+  position: relative;
+  bottom: -24px;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--ocean);
+  border-radius: 2px;
+}
+/*#endregion Current ----------------------------*/
 /*#region Body --------------------------------------*/
 body {
   font-family: var(--font-family);
@@ -139,7 +152,7 @@ ul {
   color: #f4f4fd;
 }
 /*#endregion logo -------------------------------*/
-/*#region order-service -----------------------------*/
+/*#region hero -----------------------------*/
 .hero {
   padding: 188px 0;
   background: var(--navy-blue);
@@ -182,7 +195,7 @@ ul {
   background: var(--ocean);
   cursor: pointer;
 }
-/*#endregion order-service -----------------------------*/
+/*#endregion hero -----------------------------*/
 /*#region section-advantages -----------------------------*/
 .section-advantages {
   padding-top: 120px;
@@ -385,6 +398,27 @@ ul {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 48px 24px;
+}
+.project-div-img {
+  position: relative;
+  overflow: hidden;
+}
+.project-overlay {
+  padding: 40px 32px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  background: var(--iris);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+.project-item:hover .project-overlay {
+  transform: translateY(0);
 }
 .section-portfolio .projects h2 {
   font-weight: 500;
