@@ -393,8 +393,8 @@ ul {
   background-color: var(--iris);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ftr-social-item:hover,
-.ftr-social-item:focus {
+.ftr-social-item:has(> .ftr-social-lnk:hover),
+.ftr-social-item:has(> .ftr-social-lnk:focus) {
   background-color: var(--green);
 }
 .ftr-social-lnk {
