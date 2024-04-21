@@ -1,3 +1,4 @@
+/*#region root */
 :root {
   /* color */
   --iris: #4d5ae5;
@@ -16,7 +17,8 @@
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
 }
-/* Visually hidden CSS pattern ------------------*/
+/*#endregion root */
+/*#region Visually hidden CSS pattern ------------------*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -29,10 +31,9 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* Body --------------------------------------*/
+/*#endregion Visually hidden CSS pattern ------------------*/
+/*#region Body --------------------------------------*/
 body {
-  /* margin: 0 auto; */
-  /* max-width: 1440px; */
   font-family: var(--font-family);
   color: var(--navy-blue);
   background-color: var(--white);
@@ -120,7 +121,8 @@ ul {
   margin: 0;
   padding: 0;
 }
-/* logo ------------------------------------ */
+/*#endregion Body ---------------------------------*/
+/*#region logo ------------------------------------ */
 .logo {
   font-family: var(--second-family);
   font-weight: 800;
@@ -136,7 +138,8 @@ ul {
 .logo-studio-light {
   color: #f4f4fd;
 }
-/* orer-service -----------------------------*/
+/*#endregion logo -------------------------------*/
+/*#region order-service -----------------------------*/
 .hero {
   padding: 188px 0;
   background: var(--navy-blue);
@@ -179,7 +182,8 @@ ul {
   background: var(--ocean);
   cursor: pointer;
 }
-/* section-advantages -----------------------------*/
+/*#endregion order-service -----------------------------*/
+/*#region section-advantages -----------------------------*/
 .section-advantages {
   padding-top: 120px;
   line-height: 150%;
@@ -188,6 +192,7 @@ ul {
   color: var(--slate);
 }
 .section-advantages h3 {
+  margin: 8px 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
@@ -205,10 +210,19 @@ ul {
 .section-advantages ul li {
   flex-basis: calc(100% / 4 - 12px);
 }
-.section-advantages ul li p {
-  margin-top: 8px;
+.advantages-img {
+  padding: 24px 0;
+  background: var(--cloud);
+  border-radius: 4px;
+  text-align: center;
 }
-/* what-we-doing ----------------------------------*/
+.advantages-svg {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+/*#endregion section-advantages -----------------------------*/
+/*#region what-we-doing ----------------------------------*/
 .what-we-doing {
   padding: 120px 0;
 }
@@ -221,7 +235,8 @@ ul {
 .what-we-doing ul li img {
   border: 1px solid var(--cornflower);
 }
-/* team ----------------------------------*/
+/*#endregion what-we-doing -------------------------------*/
+/*#region team ----------------------------------*/
 .our-team {
   padding: 120px 0;
   background-color: var(--cloud);
@@ -231,7 +246,6 @@ ul {
   padding: 32px 0;
 }
 .our-team h3 {
-  /* margin-top: 32px; */
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
@@ -257,7 +271,8 @@ ul {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
 }
-/* customers-------------------------------- */
+/*#endregion team ----------------------------------*/
+/*#region customers-------------------------------- */
 .section-customers {
   padding: 120px 0;
 }
@@ -282,14 +297,22 @@ ul {
 .customer-ico {
   fill: var(--light-slate);
 }
-/* footer ---------------------------------- */
+/*#endregion customers-------------------------------- */
+/*#region footer ---------------------------------- */
 .footer {
   padding: 100px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: start; */
   color: var(--cloud);
   background-color: var(--navy-blue);
+}
+.footer .container {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  gap: 120px;
 }
 .footer-text {
   width: 264px;
@@ -297,7 +320,36 @@ ul {
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
-/* portfolio.html ---------------------------------- */
+.ftr-social p {
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+.ftr-social-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.ftr-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+}
+.ftr-social-lnk {
+  width: 24px;
+  height: 24px;
+}
+.ftr-social-ico {
+  fill: var(--cloud);
+}
+/*#endregion footer --------------------------------- */
+/*#region portfolio.html ---------------------------------- */
 .section-portfolio {
   padding: 96px 0 120px 0;
 }
@@ -354,3 +406,4 @@ ul {
   border: 1px solid var(--cornflower);
   border-top-width: 0;
 }
+/*#endregion portfolio.html --------------------------------- */
