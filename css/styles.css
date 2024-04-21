@@ -389,7 +389,6 @@ ul {
   height: 40px;
   border-radius: 50%;
   background-color: var(--iris);
-  fill: var(--cloud);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ftr-social-item:hover,
@@ -399,6 +398,9 @@ ul {
 .ftr-social-lnk {
   width: 24px;
   height: 24px;
+}
+.ftr-social-ico {
+  fill: var(--cloud);
 }
 /*#endregion footer --------------------------------- */
 /*#region portfolio.html ---------------------------------- */
